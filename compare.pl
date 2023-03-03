@@ -1,5 +1,4 @@
 use strict;
-use diagnostics;
 
 sub compare($$){
 	my $score = 0;
@@ -9,9 +8,6 @@ sub compare($$){
 	my $tl;
 	$tl = $ul if ($ul >= $vl);
 	$tl = $vl if ($vl > $ul);
-	if($u eq $v){
-		return 100;
-	}
 	
 	my $s;
 	my $t;
