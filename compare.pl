@@ -16,8 +16,6 @@ sub compare($$){
 		print ("\n" . $i . ", ");
 		$s = substr $u, $i, 1 or $s = "";
 		$t = substr $v, $i, 1 or $t = "";
-		print ("s is undefined! ") if (!$s);
-		print ("t is undefined! ") if (!$t);
 		print ("\"" . $s . "\" == \"" . $t . "\"") if ($s eq $t);
 		print ("\"" . $s . "\" =/= \"" . $t . "\"") unless ($s eq $t);
 		$score++ if ($s eq $t);
